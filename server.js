@@ -9,8 +9,8 @@ app.use(express.json());
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'), function(err) {
     if (err) {
-      console.error(err);
-      res.status(500).send('Internal Server Error');
+      console.log(err);
+     
     }
   });
 });
